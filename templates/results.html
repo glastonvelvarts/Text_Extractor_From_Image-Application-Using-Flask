@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Results</title>
+</head>
+<body>
+    <h1>Extracted Text</h1>
+    <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+    <pre>{{ text }}</pre>
+    <a href="/">Go Back</a>
+</body>
+</html>
